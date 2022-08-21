@@ -14,8 +14,14 @@ const Letter: React.FC<LetterProps> = (props) => {
     handleLetterClick,
   } = props
 
+  const handleClick = () => {
+    if (hasBeenSelected) return
+
+    handleLetterClick(letter)
+  }
+
   return (
-    <div className='letter' onClick={() => handleLetterClick(letter)}>
+    <div className='letter' onClick={handleClick}>
       {letter}
     </div>
   )
