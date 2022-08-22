@@ -65,6 +65,7 @@ const App = () => {
 
   const renderedGameOverContent = (
     <div className='win-text'>
+      {answer && <GuessArea answer={answer} />}
       <div>You won!</div>
       <div>It took you {guessAmount} guesses</div>
       <button onClick={handleResetGame}>Play Again?</button>

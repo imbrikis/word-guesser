@@ -76,10 +76,14 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  height: 11rem;
+  height: 20rem;
   justify-content: space-between;
 }
 
-.win-text div:nth-child(2) {
+.win-text > div:nth-child(2) {
   margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 3rem;
 }
