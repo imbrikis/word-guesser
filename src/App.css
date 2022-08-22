@@ -76,6 +76,10 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  height: 10rem;
+  height: 11rem;
   justify-content: space-between;
+}
+
+.win-text div:nth-child(2) {
+  margin-bottom: 1rem;
 }

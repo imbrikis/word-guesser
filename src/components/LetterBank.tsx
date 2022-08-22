@@ -56,7 +56,13 @@ const LetterBank: React.FC<LetterBankProps> = (props) => {
   return (
     <div className='letter-bank'>
       {letters.map((letter) => {
-        return <Letter letter={letter} handleLetterClick={handleLetterClick} />
+        return (
+          <Letter
+            key={letter.letter}
+            letter={letter}
+            handleLetterClick={handleLetterClick}
+          />
+        )
       })}
     </div>
   )
