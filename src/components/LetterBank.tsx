@@ -12,7 +12,7 @@ type Letters = {
 }[]
 
 interface LetterBankProps {
-  setGuessAmount: (amount: number) => void
+  setGuessAmount: (prev: any) => void
   letters: Letters
   setLetters: (input: Letters) => void
   answer: Answer
@@ -50,7 +50,6 @@ const LetterBank: React.FC<LetterBankProps> = (props) => {
     })
 
     setLetters(newLetters)
-    // TYPE THIS
     setGuessAmount((prev: number) => prev + 1)
   }
 
