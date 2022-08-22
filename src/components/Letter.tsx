@@ -21,7 +21,10 @@ const Letter: React.FC<LetterProps> = (props) => {
   }
 
   return (
-    <div className='letter' onClick={handleClick}>
+    <div
+      className={`letter ${hasBeenSelected ? 'selected' : ''}`}
+      onClick={handleClick}
+    >
       {letter}
     </div>
   )

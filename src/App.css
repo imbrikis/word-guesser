@@ -12,15 +12,24 @@
 }
 
 .guess-area {
-  width: 300px;
+  padding: 0.8rem 0 1rem 0;
+  width: 400px;
+  height: 25px;
   background: #666;
   margin-bottom: 4rem;
   display: flex;
   justify-content: space-around;
+  font-size: 1.25rem;
 }
 
 .guess {
+  color: #85aac9;
+  width: 20px;
   border-bottom: 2px solid white;
+}
+
+.guessed-letter {
+  color: white;
 }
 
 .letter-bank {
@@ -45,6 +54,13 @@
   font-weight: bold;
 }
 
+.selected,
+.selected:hover {
+  background-color: rgb(92, 92, 92);
+  color: black;
+  font-weight: unset;
+}
+
 .letter:active {
   background-color: #aaaaaa88;
   user-select: none;
@@ -53,4 +69,13 @@
 .total-guesses {
   align-self: flex-end;
   width: 200px;
+  font-size: 1.25rem;
+}
+
+.win-text {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: space-between;
 }

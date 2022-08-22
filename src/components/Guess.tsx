@@ -10,8 +10,8 @@ interface GuessProps {
 const Guess: React.FC<GuessProps> = (props) => {
   const { tile } = props
   return (
-    <div className='guess'>
-      <span>{tile.hasBeenGuessed ? tile.letter : ' '}</span>
+    <div className={`guess ${tile.hasBeenGuessed ? 'guessed-letter' : ''}`}>
+      {tile.hasBeenGuessed ? tile.letter : '?'}
     </div>
   )
 }
